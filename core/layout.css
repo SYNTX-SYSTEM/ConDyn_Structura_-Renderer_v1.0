@@ -1,3 +1,4 @@
+
 /* COVER */
 
 .cover {
@@ -5,14 +6,12 @@
 }
 
 .cover-inner {
-  margin-top: 175pt;
+  margin-top: 170pt;
 }
-
-/* WORDMARK */
 
 .logo-container {
   width: 220pt;
-  margin: 0 auto 42pt auto;
+  margin: 0 auto 40pt auto;
 }
 
 .logo-container img {
@@ -25,25 +24,268 @@
 
 .title-block {
   width: 420pt;
-  margin: 0 auto 70pt auto;
+  margin: 0 auto 60pt auto;
 }
 
 .cover h1 {
-  font-size: 24pt;
-  letter-spacing: 2.2pt;
-  margin: 0 0 14pt 0;
+  font-size: 22pt;
+  letter-spacing: 2pt;
+  margin: 0 0 12pt 0;
 }
 
 .cover h2 {
-  font-size: 14pt;
+  font-size: 13pt;
   font-weight: normal;
-  line-height: 1.35;
+  line-height: 1.4;
   margin: 0;
 }
 
-/* META */
+/* TIMELINE — SUBTLE STRUCTURAL VERSION */
 
-.cover-meta p {
-  font-size: 9pt;
-  margin: 6pt 0;
+.timeline {
+  margin-top: 50pt;
+  position: relative;
+  padding-left: 35pt;
 }
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 8pt;
+  top: 0;
+  bottom: 0;
+  width: 2pt;
+  background: #0A3A7A;
+}
+
+.timeline-step {
+  position: relative;
+  margin-bottom: 45pt;
+}
+
+.timeline-step::before {
+  content: "";
+  position: absolute;
+  left: -27pt;
+  top: 6pt;
+  width: 10pt;
+  height: 10pt;
+  background: #ffffff;
+  border: 2pt solid #0A3A7A;
+  border-radius: 50%;
+}
+
+.timeline-step h2 {
+  margin: 0 0 6pt 0;
+  font-size: 12pt;
+  letter-spacing: 0.5pt;
+}
+
+.timeline-step p {
+  margin: 0;
+  font-size: 10pt;
+  line-height: 1.4;
+}
+
+
+/* CAPITAL GRID */
+
+.capital-grid {
+  margin-top: 40pt;
+  display: flex;
+  flex-direction: column;
+  gap: 22pt;
+}
+
+.capital-row {
+  display: grid;
+  grid-template-columns: 220pt 260pt 60pt;
+  align-items: center;
+  column-gap: 20pt;
+}
+
+.capital-label {
+  font-size: 10pt;
+}
+
+.capital-value {
+  font-family: Courier, monospace;
+  font-size: 10pt;
+  text-align: right;
+}
+
+.capital-bar {
+  width: 260pt;
+  height: 6pt;
+  background: #E5EAF2;
+  position: relative;
+}
+
+.capital-bar .fill {
+  height: 100%;
+  background: #0A3A7A;
+}
+
+.capital-row.dominant .capital-label {
+  font-weight: bold;
+}
+
+.capital-row.reserve .capital-label {
+  opacity: 0.8;
+}
+
+
+/* ============================= */
+/* CAPITAL DEPLOYMENT — STABLE  */
+/* ============================= */
+
+.capital-wrapper {
+  margin-top: 40pt;
+  width: 100%;
+}
+
+.capital-item {
+  margin-bottom: 22pt;
+  position: relative;
+}
+
+.capital-label {
+  font-size: 10pt;
+  margin-bottom: 6pt;
+}
+
+.capital-bar {
+  width: 420pt;           /* FIXE Breite für PDF */
+  height: 10pt;
+  background: #E5EAF2;
+  position: relative;
+}
+
+.capital-fill {
+  height: 100%;
+  background: #0A3A7A;
+}
+
+.capital-value {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-family: Courier, monospace;
+  font-size: 10pt;
+}
+
+/* Dominanz */
+.capital-item.dominant .capital-bar {
+  height: 14pt;
+}
+
+.capital-item.dominant .capital-label {
+  font-weight: bold;
+}
+
+/* Reserve dezenter */
+.capital-item.reserve .capital-label {
+  opacity: 0.8;
+}
+
+
+/* ===================================== */
+/* SYSTEMIC CAPITAL ARCHITECTURE         */
+/* ===================================== */
+
+.capital-system {
+  margin-top: 50pt;
+}
+
+.capital-block {
+  margin-bottom: 45pt;
+  padding-top: 12pt;
+  border-top: 1pt solid #0A3A7A;
+}
+
+.capital-block.core {
+  border-top: 3pt solid #0A3A7A;
+}
+
+.capital-block.buffer {
+  opacity: 0.85;
+}
+
+.block-title {
+  font-size: 11pt;
+  letter-spacing: 1pt;
+  margin-bottom: 14pt;
+  text-transform: uppercase;
+}
+
+.capital-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8pt;
+  font-size: 10pt;
+}
+
+.capital-row .value {
+  font-family: Courier, monospace;
+}
+
+
+/* ================= EMPHASIS ================= */
+
+.statement.emphasis {
+  border-left: 3pt solid #0A3A7A;
+  padding-left: 18pt;
+  margin-bottom: 30pt;
+}
+
+/* ================= CRITERIA ================= */
+
+.criteria-block {
+  margin-top: 40pt;
+}
+
+.criteria-item {
+  border-top: 1pt solid #0A3A7A;
+  padding: 12pt 0;
+  font-size: 10pt;
+}
+
+/* ================= CAPITAL SYSTEM ================= */
+
+.capital-system {
+  margin-top: 60pt;
+}
+
+.capital-block {
+  margin-bottom: 50pt;
+  padding-top: 16pt;
+  border-top: 1pt solid #0A3A7A;
+}
+
+.capital-block.core {
+  border-top: 3pt solid #0A3A7A;
+}
+
+.capital-block.buffer {
+  opacity: 0.9;
+}
+
+.block-title {
+  font-size: 11pt;
+  letter-spacing: 1.2pt;
+  text-transform: uppercase;
+  margin-bottom: 18pt;
+}
+
+.capital-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10pt;
+  font-size: 10pt;
+}
+
+.capital-row .value {
+  font-family: Courier, monospace;
+  letter-spacing: 0.5pt;
+}
+

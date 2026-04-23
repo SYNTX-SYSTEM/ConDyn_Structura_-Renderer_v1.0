@@ -21,3 +21,12 @@ td.num {
   text-align: right;
   font-family: Courier, monospace;
 }
+
+/* CAPITAL BARS */
+
+.capital-bar {
+  height: 6pt;
+  background: #0A3A7A;
+  margin-top: 4pt;
+}
+

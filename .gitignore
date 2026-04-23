@@ -1,5 +1,5 @@
 # Generated PDFs
 *.pdf
-
+!stage1_federal_structured.pdf
 # OS
 .DS_Store
