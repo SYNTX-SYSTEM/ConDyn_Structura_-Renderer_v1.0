@@ -31,3 +31,29 @@ body {
   font-size: 8pt;
   font-family: Courier, monospace;
 }
+
+.page h1 {
+  border-bottom: 1pt solid #0A3A7A;
+  padding-bottom: 6pt;
+}
+
+
+/* =============================== */
+/* INSTITUTIONAL FOOTER           */
+/* =============================== */
+
+.page::before {
+  content: "ConDyn — Structural Strategy Dossier — v1.0";
+  position: absolute;
+  bottom: 15mm;
+  left: 20mm;
+  font-size: 8pt;
+  font-family: Courier, monospace;
+  opacity: 0.8;
+}
+
+
+.cover::before {
+  content: "";
+}
+

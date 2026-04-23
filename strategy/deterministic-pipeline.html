@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Deterministic Processing Pipeline — ConDyn</title>
+
+<link rel="stylesheet" href="../core/base.css">
+<link rel="stylesheet" href="../core/layout.css">
+<link rel="stylesheet" href="../core/typography.css">
+<link rel="stylesheet" href="../core/tables.css">
+
+</head>
+<body>
+
+<div class="page">
+  <h1>2. DETERMINISTIC PROCESSING PIPELINE</h1>
+
+  <div class="statement">
+    <p>The ConDyn system executes five deterministic operations on a persistent structural graph.</p>
+    <p>Each stage is auditable, reproducible, and constraint-bound.</p>
+  </div>
+
+  <table>
+    <tr>
+      <th>Step</th>
+      <th>Operation</th>
+      <th>Structural Effect</th>
+      <th>Failure Condition</th>
+    </tr>
+
+    <tr>
+      <td>1</td>
+      <td>Structural Extraction</td>
+      <td>Institutional artifacts converted to typed graph nodes with provenance</td>
+      <td>Invalid structural representation</td>
+    </tr>
+
+    <tr>
+      <td>2</td>
+      <td>Axiom Binding</td>
+      <td>Nodes evaluated against immutable axiom registry</td>
+      <td>Constraint violation detected</td>
+    </tr>
+
+    <tr>
+      <td>3</td>
+      <td>Conflict Detection</td>
+      <td>Cross-temporal contradiction traversal</td>
+      <td>Unresolved contradiction edge</td>
+    </tr>
+
+    <tr>
+      <td>4</td>
+      <td>State Transition</td>
+      <td>Validated append-only state snapshot (v → v+1)</td>
+      <td>Transition rejected</td>
+    </tr>
+
+    <tr>
+      <td>5</td>
+      <td>Optional Rendering</td>
+      <td>Language output without structural authority</td>
+      <td>No structural modification permitted</td>
+    </tr>
+
+  </table>
+
+  <h2>Determinism Guarantee</h2>
+
+  <div class="statement">
+    <p>Given identical input sequences and identical initial state, the pipeline produces identical structural output.</p>
+    <p>Replay equivalence is enforced through deterministic transition logic and state hashing.</p>
+  </div>
+
+</div>
+
+</body>
+</html>

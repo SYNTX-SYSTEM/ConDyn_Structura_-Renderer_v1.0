@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Validation Metrics — ConDyn</title>
+
+<link rel="stylesheet" href="../core/base.css">
+<link rel="stylesheet" href="../core/layout.css">
+<link rel="stylesheet" href="../core/typography.css">
+<link rel="stylesheet" href="../core/tables.css">
+
+</head>
+<body>
+
+<div class="page">
+  <h1>7. VALIDATION METRICS</h1>
+
+  <div class="statement">
+    <p>Stage 1 success is defined through measurable structural invariants.</p>
+    <p>Evaluation is deterministic, replayable, and independently verifiable.</p>
+  </div>
+
+  <h2>Core Validation Gates</h2>
+
+  <table>
+    <tr>
+      <th>Gate</th>
+      <th>Criterion</th>
+      <th>Verification Method</th>
+    </tr>
+
+    <tr>
+      <td>V1</td>
+      <td>Deterministic Replay Equivalence</td>
+      <td>Hash equality across identical input sequences</td>
+    </tr>
+
+    <tr>
+      <td>V2</td>
+      <td>Constraint Enforcement Completeness</td>
+      <td>Zero accepted violations in adversarial test set</td>
+    </tr>
+
+    <tr>
+      <td>V3</td>
+      <td>Contradiction Detection Integrity</td>
+      <td>Conflict edge generation under synthetic stress tests</td>
+    </tr>
+
+    <tr>
+      <td>V4</td>
+      <td>State Version Traceability</td>
+      <td>Full rollback and forward trace reproducibility</td>
+    </tr>
+
+  </table>
+
+  <h2>Quantitative Measurement Layer</h2>
+
+  <table>
+    <tr>
+      <th>Metric</th>
+      <th>Definition</th>
+      <th>Target Threshold</th>
+    </tr>
+
+    <tr>
+      <td>Replay Consistency Rate</td>
+      <td>Identical structural output across repeated runs</td>
+      <td>100%</td>
+    </tr>
+
+    <tr>
+      <td>Violation Acceptance Rate</td>
+      <td>Percentage of constraint breaches not detected</td>
+      <td>0%</td>
+    </tr>
+
+    <tr>
+      <td>State Drift Rate</td>
+      <td>Untracked structural changes over time</td>
+      <td>0%</td>
+    </tr>
+
+    <tr>
+      <td>Audit Trace Completeness</td>
+      <td>Recoverable state transitions per decision</td>
+      <td>100%</td>
+    </tr>
+
+  </table>
+
+  <div class="statement">
+    <p>Validation is not probabilistic benchmarking.</p>
+    <p>It is structural invariant preservation under repeated execution.</p>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Constraint Hierarchy — ConDyn</title>
+
+<link rel="stylesheet" href="../core/base.css">
+<link rel="stylesheet" href="../core/layout.css">
+<link rel="stylesheet" href="../core/typography.css">
+<link rel="stylesheet" href="../core/tables.css">
+
+</head>
+<body>
+
+<div class="page">
+  <h1>4. CONSTRAINT HIERARCHY</h1>
+
+  <div class="statement">
+    <p>All structural transitions are governed by three transformation rules.</p>
+    <p>These rules ensure invariant preservation, temporal integrity, and non-destructive state evolution.</p>
+  </div>
+
+  <h2>Transformation Rules</h2>
+
+  <table>
+    <tr>
+      <th>Rule</th>
+      <th>Definition</th>
+      <th>Guarantee</th>
+    </tr>
+
+    <tr>
+      <td>Monotonic Accumulation</td>
+      <td>State transitions append structural information without erasure.</td>
+      <td>Complete historical traceability.</td>
+    </tr>
+
+    <tr>
+      <td>Axiom Priority</td>
+      <td>Immutable invariants override conflicting updates.</td>
+      <td>No silent override of institutional commitments.</td>
+    </tr>
+
+    <tr>
+      <td>Temporal Precedence</td>
+      <td>Constraints propagate forward across all subsequent transitions.</td>
+      <td>Later inputs cannot invalidate earlier commitments without formal amendment.</td>
+    </tr>
+
+  </table>
+
+  <h2>Axiom Registry</h2>
+
+  <div class="statement">
+    <p>The Immutable Axiom Registry defines structural invariants.</p>
+    <p>Amendment requires formal governance protocol and produces a versioned transition event.</p>
+    <p>No update bypasses constraint validation.</p>
+  </div>
+
+</div>
+
+</body>
+</html>

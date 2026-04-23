@@ -21,3 +21,11 @@ td.num {
   text-align: right;
   font-family: Courier, monospace;
 }
+
+th {
+  text-align: left;
+  padding-bottom: 6pt;
+  border-bottom: 1pt solid #0A3A7A;
+  font-weight: normal;
+}
+

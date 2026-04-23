@@ -56,3 +56,18 @@ p {
   padding-bottom: 8pt;
   border-bottom: 0.5pt solid #0A3A7A;
 }
+
+/* =============================== */
+/* CHAPTER STRENGTHENING          */
+/* =============================== */
+
+.page h1 {
+  font-size: 22pt;
+  letter-spacing: 0.5pt;
+  margin-bottom: 18pt;
+}
+
+.page h1::first-letter {
+  font-size: 24pt;
+}
+

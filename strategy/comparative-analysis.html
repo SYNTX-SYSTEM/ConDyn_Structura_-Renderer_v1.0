@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Comparative Structural Analysis — ConDyn</title>
+
+<link rel="stylesheet" href="../core/base.css">
+<link rel="stylesheet" href="../core/layout.css">
+<link rel="stylesheet" href="../core/typography.css">
+<link rel="stylesheet" href="../core/tables.css">
+
+</head>
+<body>
+
+<div class="page">
+  <h1>5. COMPARATIVE STRUCTURAL ANALYSIS</h1>
+
+  <div class="statement">
+    <p>Scaling probabilistic systems does not produce persistent structural state.</p>
+    <p>The limitation is architectural, not parametric.</p>
+  </div>
+
+  <h2>Structural Limit Comparison</h2>
+
+  <table>
+    <tr>
+      <th>Approach</th>
+      <th>Provides</th>
+      <th>Cannot Provide</th>
+    </tr>
+
+    <tr>
+      <td>More Parameters</td>
+      <td>Higher capacity, broader knowledge</td>
+      <td>Persistent structural continuity</td>
+    </tr>
+
+    <tr>
+      <td>Larger Context Windows</td>
+      <td>More tokens per inference</td>
+      <td>Versioned state transitions</td>
+    </tr>
+
+    <tr>
+      <td>RAG Systems</td>
+      <td>Improved retrieval accuracy</td>
+      <td>Constraint enforcement and contradiction detection</td>
+    </tr>
+
+    <tr>
+      <td>Fine-Tuning</td>
+      <td>Domain adaptation</td>
+      <td>Deterministic replay equivalence</td>
+    </tr>
+
+    <tr>
+      <td>Constrained Decoding</td>
+      <td>Output filtering</td>
+      <td>Pre-generation structural validation</td>
+    </tr>
+
+  </table>
+
+  <h2>Contradiction Scenario</h2>
+
+  <table>
+    <tr>
+      <th>Session</th>
+      <th>Event</th>
+      <th>Stateless System Behavior</th>
+      <th>ConDyn Behavior</th>
+    </tr>
+
+    <tr>
+      <td>1</td>
+      <td>Policy P1 requires dual approval</td>
+      <td>Stored only if present in context</td>
+      <td>Recorded in structural state v1.0</td>
+    </tr>
+
+    <tr>
+      <td>2</td>
+      <td>Emergency memo contradicts P1</td>
+      <td>No conflict detection</td>
+      <td>Contradiction edge detected, transition rejected</td>
+    </tr>
+
+    <tr>
+      <td>3</td>
+      <td>Query on approval authority</td>
+      <td>Plausible output based on session context</td>
+      <td>Constraint enforced, structural trace provided</td>
+    </tr>
+
+  </table>
+
+  <div class="statement">
+    <p>The structural difference lies in persistent state and constraint-bound transition logic.</p>
+  </div>
+
+</div>
+
+</body>
+</html>

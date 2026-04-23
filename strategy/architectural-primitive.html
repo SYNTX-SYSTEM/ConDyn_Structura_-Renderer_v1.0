@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Architectural Primitive — ConDyn</title>
+
+<link rel="stylesheet" href="../core/base.css">
+<link rel="stylesheet" href="../core/layout.css">
+<link rel="stylesheet" href="../core/typography.css">
+<link rel="stylesheet" href="../core/tables.css">
+
+</head>
+<body>
+
+<div class="page">
+  <h1>1. ARCHITECTURAL PRIMITIVE</h1>
+
+  <div class="statement">
+    <p>ConDyn defines a deterministic structural compute layer operating independently of probabilistic language generation systems.</p>
+
+    <p>The system introduces persistent structural state computation across time, with constraint enforcement at every state transition.</p>
+
+    <p>This architecture separates language rendering from structural authority. Structural validation precedes and governs all optional output generation.</p>
+  </div>
+
+  <h2>Structural Distinction</h2>
+
+  <table>
+    <tr>
+      <th>System Class</th>
+      <th>Structural Limitation</th>
+      <th>ConDyn Resolution</th>
+    </tr>
+
+    <tr>
+      <td>LLM-based Systems</td>
+      <td>Probabilistic, stateless inference</td>
+      <td>Deterministic structural state with replay equivalence</td>
+    </tr>
+
+    <tr>
+      <td>Knowledge Graphs</td>
+      <td>No temporal versioning, no constraint enforcement</td>
+      <td>Versioned append-only graph with axiom validation</td>
+    </tr>
+
+    <tr>
+      <td>Workflow Engines</td>
+      <td>Process orchestration without structural inference</td>
+      <td>Cross-artifact structural coherence modeling</td>
+    </tr>
+
+    <tr>
+      <td>Event Sourcing</td>
+      <td>Event replay without semantic validation</td>
+      <td>Constraint-bound state transitions</td>
+    </tr>
+
+  </table>
+
+  <h2>Deterministic Guarantee</h2>
+
+  <div class="statement">
+    <p>The same input sequence applied to the same initial state produces identical structural output.</p>
+
+    <p>No scaling of probabilistic systems produces persistent structural continuity. Structural state is an architectural property, not a parameter count effect.</p>
+  </div>
+
+</div>
+
+</body>
+</html>

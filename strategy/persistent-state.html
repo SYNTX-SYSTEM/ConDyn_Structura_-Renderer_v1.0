@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Persistent State Evolution — ConDyn</title>
+
+<link rel="stylesheet" href="../core/base.css">
+<link rel="stylesheet" href="../core/layout.css">
+<link rel="stylesheet" href="../core/typography.css">
+<link rel="stylesheet" href="../core/tables.css">
+
+</head>
+<body>
+
+<div class="page">
+  <h1>3. PERSISTENT STATE EVOLUTION</h1>
+
+  <div class="statement">
+    <p>ConDyn maintains a versioned, append-only structural graph.</p>
+    <p>State transitions never overwrite prior structural history.</p>
+    <p>Contradictions are recorded as conflict edges, not erased.</p>
+  </div>
+
+  <h2>Versioned Transition Model</h2>
+
+  <table>
+    <tr>
+      <th>Version</th>
+      <th>Event</th>
+      <th>Structural Outcome</th>
+      <th>State Status</th>
+    </tr>
+
+    <tr>
+      <td>v1.0</td>
+      <td>Policy P1 registered</td>
+      <td>Axiom A7 bound</td>
+      <td>Valid</td>
+    </tr>
+
+    <tr>
+      <td>v2.0</td>
+      <td>Memo M1 ingested</td>
+      <td>Conflict with A7 detected</td>
+      <td>Contradiction recorded</td>
+    </tr>
+
+    <tr>
+      <td>v3.0</td>
+      <td>Formal resolution applied</td>
+      <td>Axiom amended via governance protocol</td>
+      <td>Valid</td>
+    </tr>
+
+  </table>
+
+  <h2>Append-Only Guarantees</h2>
+
+  <div class="statement">
+    <p><strong>Monotonic Accumulation:</strong> State grows without destructive modification.</p>
+    <p><strong>Conflict Transparency:</strong> Contradictions are structurally traceable.</p>
+    <p><strong>Temporal Integrity:</strong> Earlier commitments cannot be silently overridden.</p>
+  </div>
+
+</div>
+
+</body>
+</html>
