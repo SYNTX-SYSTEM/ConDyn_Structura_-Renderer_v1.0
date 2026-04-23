@@ -1,0 +1,38 @@
+h1 {
+  grid-column: span 12;
+  font-size: 20pt;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--cd-blue-900);
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 14pt;
+  font-weight: 600;
+  color: var(--cd-blue-900);
+  border-bottom: var(--cd-rule-thin) solid var(--cd-blue-900);
+  padding-bottom: 4px;
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-size: 11pt;
+  font-weight: 500;
+  color: var(--cd-blue-900);
+  margin-bottom: 6px;
+}
+
+p {
+  font-size: 10pt;
+  line-height: 1.4;
+  margin: 0 0 8px 0;
+}
+
+.footnote {
+  font-family: "Courier New", monospace;
+  font-size: 8pt;
+  border-top: var(--cd-rule-thin) solid var(--cd-blue-900);
+  padding-top: 6px;
+  margin-top: 16px;
+}

@@ -1,0 +1,22 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 9pt;
+}
+
+th {
+  background: var(--cd-blue-900);
+  color: var(--cd-white);
+  text-align: left;
+  padding: 6px;
+}
+
+td {
+  border: var(--cd-rule-thin) solid var(--cd-blue-900);
+  padding: 6px;
+}
+
+td.num {
+  text-align: right;
+  font-family: "Courier New", monospace;
+}

@@ -1,0 +1,41 @@
+.diagram {
+  border: var(--cd-rule-medium) solid var(--cd-blue-900);
+  padding: 16px;
+  position: relative;
+}
+
+.node {
+  border: var(--cd-rule-medium) solid var(--cd-blue-900);
+  padding: 8px 12px;
+  display: inline-block;
+  margin: 8px;
+}
+
+.node.axiom {
+  border-style: solid;
+}
+
+.node.state {
+  border-radius: 50%;
+}
+
+.node.conflict {
+  transform: rotate(45deg);
+}
+
+.edge {
+  height: var(--cd-rule-strong);
+  background: var(--cd-blue-900);
+  margin: 8px 0;
+}
+
+.edge.constraint {
+  height: var(--cd-rule-medium);
+  background: var(--cd-blue-700);
+  border-top: var(--cd-rule-thin) dashed var(--cd-blue-900);
+}
+
+.version {
+  font-family: "Courier New", monospace;
+  color: var(--cd-blue-500);
+}

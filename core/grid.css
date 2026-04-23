@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  background: var(--cd-white);
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 20mm;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 8px;
+  position: relative;
+}
+
+.section {
+  grid-column: span 12;
+  margin-bottom: 24px;
+}
+
+.col-8 { grid-column: span 8; }
+.col-6 { grid-column: span 6; }
+.col-4 { grid-column: span 4; }
+.col-3 { grid-column: span 3; }

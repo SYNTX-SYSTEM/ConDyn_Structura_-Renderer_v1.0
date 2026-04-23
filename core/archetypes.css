@@ -1,0 +1,27 @@
+/* Archetype Layouts */
+
+.cover {
+  background: var(--cd-navy-950);
+  color: var(--cd-white);
+}
+
+.dark h1 {
+  color: var(--cd-white);
+}
+
+.spacer-large {
+  height: 200px;
+}
+
+.page + .page {
+  page-break-before: always;
+}
+
+@media print {
+  body {
+    margin: 0;
+  }
+  .page {
+    page-break-after: always;
+  }
+}

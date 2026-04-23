@@ -1,0 +1,23 @@
+:root {
+
+  /* Dominant Structural Blue */
+  --cd-blue-900: #0A3A7A;
+
+  /* Secondary Blue */
+  --cd-blue-700: #1E66B2;
+
+  /* Constraint / Transition */
+  --cd-blue-500: #3FA6E0;
+
+  /* Dark Field */
+  --cd-navy-950: #071A2E;
+
+  /* Neutral */
+  --cd-white: #FFFFFF;
+  --cd-black: #000000;
+
+  /* Structural Rules */
+  --cd-rule-thin: 0.5pt;
+  --cd-rule-medium: 1pt;
+  --cd-rule-strong: 1.5pt;
+}
