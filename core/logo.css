@@ -1,0 +1,19 @@
+/* STRUCTURAL LOGO CORE CROP */
+
+.logo-container {
+  width: 160pt;
+  height: 160pt;
+  margin: 0 auto 32pt auto;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+}
+
+.logo-container img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 220%;
+  height: 220%;
+  transform: translate(-50%, -50%);
+}

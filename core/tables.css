@@ -1,22 +1,23 @@
 table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 9pt;
+  font-size: 10pt;
+  margin-top: 10pt;
 }
 
 th {
-  background: var(--cd-blue-900);
-  color: var(--cd-white);
+  background: #0A3A7A;
+  color: #ffffff;
   text-align: left;
-  padding: 6px;
+  padding: 6pt;
 }
 
 td {
-  border: var(--cd-rule-thin) solid var(--cd-blue-900);
-  padding: 6px;
+  border: 0.5pt solid #0A3A7A;
+  padding: 6pt;
 }
 
 td.num {
   text-align: right;
-  font-family: "Courier New", monospace;
+  font-family: Courier, monospace;
 }

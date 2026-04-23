@@ -1,38 +1,58 @@
+/* GLOBAL */
+
 h1 {
-  grid-column: span 12;
   font-size: 20pt;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--cd-blue-900);
-  margin-bottom: 16px;
+  margin-bottom: 18pt;
+  letter-spacing: 0.5pt;
 }
 
 h2 {
   font-size: 14pt;
-  font-weight: 600;
-  color: var(--cd-blue-900);
-  border-bottom: var(--cd-rule-thin) solid var(--cd-blue-900);
-  padding-bottom: 4px;
-  margin-bottom: 12px;
-}
-
-h3 {
-  font-size: 11pt;
-  font-weight: 500;
-  color: var(--cd-blue-900);
-  margin-bottom: 6px;
+  margin-bottom: 22pt;
 }
 
 p {
   font-size: 10pt;
   line-height: 1.4;
-  margin: 0 0 8px 0;
 }
 
+/* STATEMENT */
+
+.statement {
+  margin-top: 24pt;
+  width: 160mm;
+}
+
+.statement p {
+  font-size: 10pt;
+  line-height: 1.38;
+  margin-bottom: 9pt;
+}
+
+.statement .num {
+  display: inline-block;
+  width: 24pt;
+  font-family: Courier, monospace;
+  font-weight: bold;
+}
+
+/* FOOTNOTE */
+
 .footnote {
-  font-family: "Courier New", monospace;
+  margin-top: 45pt;
   font-size: 8pt;
-  border-top: var(--cd-rule-thin) solid var(--cd-blue-900);
-  padding-top: 6px;
-  margin-top: 16px;
+  line-height: 1.4;
+  font-family: Courier, monospace;
+}
+
+.statement {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* STRUCTURAL HEADER RULE */
+
+.page > h1 {
+  padding-bottom: 8pt;
+  border-bottom: 0.5pt solid #0A3A7A;
 }

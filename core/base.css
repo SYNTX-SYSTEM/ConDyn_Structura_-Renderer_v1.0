@@ -1,0 +1,33 @@
+@page {
+  size: A4;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  background: #ffffff;
+  color: #0A3A7A;
+  counter-reset: page;
+}
+
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 20mm;
+  box-sizing: border-box;
+  position: relative;
+  page-break-after: always;
+  counter-increment: page;
+}
+
+/* PAGE NUMBER */
+
+.page::after {
+  content: counter(page);
+  position: absolute;
+  bottom: 15mm;
+  right: 20mm;
+  font-size: 8pt;
+  font-family: Courier, monospace;
+}

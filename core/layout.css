@@ -1,0 +1,49 @@
+/* COVER */
+
+.cover {
+  text-align: center;
+}
+
+.cover-inner {
+  margin-top: 175pt;
+}
+
+/* WORDMARK */
+
+.logo-container {
+  width: 220pt;
+  margin: 0 auto 42pt auto;
+}
+
+.logo-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* TITLE */
+
+.title-block {
+  width: 420pt;
+  margin: 0 auto 70pt auto;
+}
+
+.cover h1 {
+  font-size: 24pt;
+  letter-spacing: 2.2pt;
+  margin: 0 0 14pt 0;
+}
+
+.cover h2 {
+  font-size: 14pt;
+  font-weight: normal;
+  line-height: 1.35;
+  margin: 0;
+}
+
+/* META */
+
+.cover-meta p {
+  font-size: 9pt;
+  margin: 6pt 0;
+}

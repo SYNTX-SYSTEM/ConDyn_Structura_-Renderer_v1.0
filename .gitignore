@@ -1,0 +1,5 @@
+# Generated PDFs
+*.pdf
+
+# OS
+.DS_Store
