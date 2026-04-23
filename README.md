@@ -10,17 +10,17 @@ SYSTEM PRÄMISSE
 Dieses Repository implementiert keinen „Style“.
 Es implementiert ein strukturelles Rendering-System.
 
-Das Rendering folgt:
+Rendering folgt:
 
 • Deterministischer Grid-Logik  
-• Appendix-only Seitenarchitektur  
+• Append-only Seitenarchitektur  
 • Constraint-Hierarchie  
 • Versionierungsprinzip  
 • Institutioneller Dossier-Struktur  
 
 Keine Dekoration.
 Keine Startup-Ästhetik.
-Keine Marketing-Rhetorik.
+Keine Marketing-Schicht.
 
 Layout ist Architektur.
 
@@ -46,28 +46,26 @@ Root
 DESIGNPRINZIPIEN
 ────────────────────────────────────────
 
-1. Determinismus
-   Identischer Input → Identisches PDF
+1. Determinismus  
+   Identischer Input → Identisches PDF  
 
-2. Grid-Struktur
-   12-Column System
-   Keine freien Positionierungen
+2. Grid-Struktur  
+   12-Column System  
+   Keine freie Positionierung  
 
-3. Constraint-Disziplin
-   Tabellen = Validierungslogik
-   Farben = Zustandsmarkierung
-   Keine dekorativen Elemente
+3. Constraint-Disziplin  
+   Tabellen = Validierungslogik  
+   Farben = Zustandsmarkierung  
 
-4. Seitenarchetypen
-   Cover
-   Validation
-   Budget
-   Erweiterbar ohne Stilbruch
+4. Seitenarchetypen  
+   Cover  
+   Validation  
+   Budget  
 
-5. Engine
-   Chromium Headless
-   Browser-Rendering
-   Kein CSS-Downgrade
+5. Engine  
+   Chromium Headless  
+   Browser-Rendering  
+   Kein CSS-Downgrade  
 
 ────────────────────────────────────────
 PDF GENERIERUNG
@@ -82,59 +80,44 @@ Build:
 
 Intern:
 
-chromium   --headless   --disable-gpu   --no-sandbox   --disable-dev-shm-usage   --print-to-pdf=output.pdf   --print-to-pdf-no-header   index.html
+chromium \
+  --headless \
+  --disable-gpu \
+  --no-sandbox \
+  --disable-dev-shm-usage \
+  --print-to-pdf=output.pdf \
+  --print-to-pdf-no-header \
+  index.html
 
 ────────────────────────────────────────
 RENDERING-GARANTIEN
 ────────────────────────────────────────
 
-✓ CSS Grid unterstützt
-✓ CSS Variables unterstützt
-✓ A4 Format stabil
-✓ Seitenumbrüche deterministisch
-✓ Tabellen exakt
-✓ Keine Layout-Divergenz
+✓ CSS Grid unterstützt  
+✓ CSS Variables unterstützt  
+✓ A4 stabil  
+✓ Seitenumbrüche deterministisch  
+✓ Tabellen exakt  
 
 ────────────────────────────────────────
 NICHT ENTHALTEN
 ────────────────────────────────────────
 
-✗ Kein Responsive Design
-✗ Kein Animationssystem
-✗ Keine UI-Komponenten
-✗ Keine Marketing-Schicht
-
-────────────────────────────────────────
-ERWEITERUNGEN
-────────────────────────────────────────
-
-Möglich:
-
-• JSON → HTML Generator
-• Versioned State Renderer
-• SVG Constraint Graph Engine
-• CLI Build-System
-• Multi-Document Pipeline
+✗ Kein Responsive Design  
+✗ Keine Animation  
+✗ Keine UI-Komponenten  
+✗ Keine Marketing-Schicht  
 
 ────────────────────────────────────────
 SYSTEMCHARAKTER
 ────────────────────────────────────────
 
-Bundesdossier.
-Technisches Validierungsdokument.
-Strukturelle Infrastruktur.
+Bundesdossier.  
+Technisches Validierungsdokument.  
+Strukturelle Infrastruktur.  
 
-Nicht:
-Pitchdeck.
-SaaS-Produkt.
-AI-Marketing.
-
-────────────────────────────────────────
-STATUS
-────────────────────────────────────────
-
-Rendering-Engine funktionsfähig.
-PDF-Output reproduzierbar.
-Strukturelle Konsistenz gewährleistet.
+Nicht: Pitchdeck.  
+Nicht: SaaS.  
+Nicht: AI-Marketing.  
 
 END.
