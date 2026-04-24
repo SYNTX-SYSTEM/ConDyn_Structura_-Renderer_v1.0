@@ -47,3 +47,10 @@
   font-size: 9pt;
   margin: 6pt 0;
 }
+
+.structural-divider {
+  border: none;
+  border-top: 1pt solid #0A3A7A;
+  margin: 20pt 0 25pt 0;
+}
+

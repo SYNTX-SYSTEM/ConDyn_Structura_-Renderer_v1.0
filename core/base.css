@@ -21,7 +21,36 @@ body {
   counter-increment: page;
 }
 
-/* PAGE NUMBER */
+/* ============================= */
+/* HEADER (TOP RIGHT)           */
+/* ============================= */
+
+.section-label {
+  position: absolute;
+  top: 15mm;
+  right: 20mm;
+  font-size: 8pt;
+  font-family: Courier, monospace;
+  opacity: 0.7;
+}
+
+/* ============================= */
+/* FOOTER LEFT                  */
+/* ============================= */
+
+.page::before {
+  content: "ConDyn — Stage 1 Execution Architecture — v1.1-stage1";
+  position: absolute;
+  bottom: 15mm;
+  left: 20mm;
+  font-size: 8pt;
+  font-family: Courier, monospace;
+  opacity: 0.8;
+}
+
+/* ============================= */
+/* FOOTER RIGHT (PAGE NUMBER)   */
+/* ============================= */
 
 .page::after {
   content: counter(page);
@@ -30,6 +59,17 @@ body {
   right: 20mm;
   font-size: 8pt;
   font-family: Courier, monospace;
+  opacity: 0.8;
+}
+
+/* COVER HAS NO FOOTER */
+
+.cover::before {
+  content: "";
+}
+
+.cover::after {
+  content: "";
 }
 
 .page h1 {
@@ -39,21 +79,28 @@ body {
 
 
 /* =============================== */
-/* INSTITUTIONAL FOOTER           */
+/* PAGE NUMBER (BOTTOM RIGHT)     */
 /* =============================== */
 
-.page::before {
-  content: "ConDyn — Structural Strategy Dossier — v1.0";
+body {
+  counter-reset: page;
+}
+
+.page {
+  counter-increment: page;
+}
+
+.page::after {
+  content: counter(page);
   position: absolute;
   bottom: 15mm;
-  left: 20mm;
+  right: 20mm;
   font-size: 8pt;
   font-family: Courier, monospace;
   opacity: 0.8;
 }
 
-
-.cover::before {
+.cover::after {
   content: "";
 }
 
