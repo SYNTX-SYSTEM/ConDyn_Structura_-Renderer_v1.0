@@ -13,8 +13,9 @@ body {
 
 .page {
   width: 210mm;
-  min-height: 297mm;
+  height: 297mm;
   padding: 20mm;
+  box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
   page-break-after: always;
@@ -26,7 +27,7 @@ body {
 .page::after {
   content: counter(page);
   position: absolute;
-  bottom: 15mm;
+  bottom: 10mm;
   right: 20mm;
   font-size: 8pt;
   font-family: Courier, monospace;
@@ -45,7 +46,7 @@ body {
 .page::before {
   content: "ConDyn — Structural Strategy Dossier — v1.0";
   position: absolute;
-  bottom: 15mm;
+  bottom: 10mm;
   left: 20mm;
   font-size: 8pt;
   font-family: Courier, monospace;
