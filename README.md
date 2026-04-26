@@ -1,123 +1,271 @@
-# CONDYN — STRUCTURAL RENDERER
+# ConDyn Structural Renderer
+### Deterministic Document Architecture for SPRIND 2026
 
-Deterministic HTML → PDF Infrastructure Renderer  
-Architectural Layout Engine for Structural Compute Dossiers  
+Right.  
+This is not a design repo.  
+This is a structural control surface.
 
-────────────────────────────────────────
-SYSTEM PRÄMISSE
-────────────────────────────────────────
+Every document in here renders deterministically.  
+Every branch represents a canonical state.  
+No layout drift.  
+No probabilistic pagination.  
+No Chrome header voodoo.
 
-Dieses Repository implementiert keinen „Style“.
-Es implementiert ein strukturelles Rendering-System.
+If it renders once, it renders the same every time.
 
-Rendering folgt:
+---
 
-• Deterministischer Grid-Logik  
-• Append-only Seitenarchitektur  
-• Constraint-Hierarchie  
-• Versionierungsprinzip  
-• Institutioneller Dossier-Struktur  
+# 🗺 Repository Map
 
-Keine Dekoration.
-Keine Startup-Ästhetik.
-Keine Marketing-Schicht.
+We don’t stack documents in folders.
 
-Layout ist Architektur.
+We version them as architectural branches.
 
-────────────────────────────────────────
-ARCHITEKTUR
-────────────────────────────────────────
+Each branch = one submission artifact.  
+Each artifact = one isolated render state.
 
-Root
-│
-├── core/
-│   ├── colors.css
-│   ├── grid.css
-│   ├── typography.css
-│   ├── tables.css
-│   ├── diagrams.css
-│   └── archetypes.css
-│
-├── index.html
-├── build.sh
-└── README.md
+---
 
-────────────────────────────────────────
-DESIGNPRINZIPIEN
-────────────────────────────────────────
+## 🌿 Branch Matrix
 
-1. Determinismus  
-   Identischer Input → Identisches PDF  
+| Branch | Artifact | Canonical Tag | Status |
+|--------|----------|---------------|--------|
+| `statement-refined-v3` | Paradigm Statement | `statement-v1.2-canonical` | Stable |
+| `stage1-execution-plan` | Stage 1 Execution Plan | `execution-plan-v1.2-canonical` | Stable |
+| `stage1-execution-architecture` | Stage 1 Execution Architecture | `stage1-v1.2-canonical` | Stable |
+| `strategy-structural-architecture` | Structural Strategy Dossier | `strategy-v1.2-canonical` | Stable |
 
-2. Grid-Struktur  
-   12-Column System  
-   Keine freie Positionierung  
+Each branch owns:
 
-3. Constraint-Disziplin  
-   Tabellen = Validierungslogik  
-   Farben = Zustandsmarkierung  
+- its own footer string
+- its own document label
+- its own build script
+- identical pagination core
 
-4. Seitenarchetypen  
-   Cover  
-   Validation  
-   Budget  
+---
 
-5. Engine  
-   Chromium Headless  
-   Browser-Rendering  
-   Kein CSS-Downgrade  
+# 🏗 Core Layout System
 
-────────────────────────────────────────
-PDF GENERIERUNG
-────────────────────────────────────────
+All documents share the same deterministic rendering spine.
 
-Voraussetzung:
-chromium (headless fähig)
+```
 
-Build:
+body {
+counter-reset: page;
+}
+
+.page {
+height: 297mm;
+counter-increment: page;
+overflow: hidden;
+}
+
+.page::after {
+content: counter(page);
+}
+
+```
+
+That’s it.
+
+No Chromium header injection.  
+No auto-generated page numbers.  
+No dynamic resizing.
+
+Fixed height.
+Explicit page boundary.
+Deterministic counter.
+
+If content overflows, we fix content.  
+We don’t let the renderer guess.
+
+---
+
+# 📐 Typography Canon
+
+All documents converge on v1.2 typography alignment:
+
+- Base text: 11pt
+- Line height: 1.45
+- Structural headings: 20–22pt
+- Courier for meta-layer + footers
+- 15mm footer offset (left + right)
+
+Visual hierarchy reflects ontology depth.
+
+Tables are normalized:
+
+- No heavy borders
+- Bottom rule separation
+- Column weighting enforced
+- No internal page breaks
+
+---
+
+# 🧱 Rendering Architecture
+
+Rendering uses headless Chromium.
+
+No header templates.
+No DevTools injection.
+No auto margins.
+
+Example:
+
+```
+
+./build_strategy.sh
+
+```
+
+Or generic:
+
+```
 
 ./build.sh output.pdf
 
-Intern:
+```
 
-chromium \
-  --headless \
-  --disable-gpu \
-  --no-sandbox \
-  --disable-dev-shm-usage \
-  --print-to-pdf=output.pdf \
-  --print-to-pdf-no-header \
-  index.html
+HTML is concatenated.
+CSS is canonical.
+PDF is deterministic.
 
-────────────────────────────────────────
-RENDERING-GARANTIEN
-────────────────────────────────────────
+---
 
-✓ CSS Grid unterstützt  
-✓ CSS Variables unterstützt  
-✓ A4 stabil  
-✓ Seitenumbrüche deterministisch  
-✓ Tabellen exakt  
+# 📊 Structural Model
 
-────────────────────────────────────────
-NICHT ENTHALTEN
-────────────────────────────────────────
+Each document follows the same layering logic:
 
-✗ Kein Responsive Design  
-✗ Keine Animation  
-✗ Keine UI-Komponenten  
-✗ Keine Marketing-Schicht  
+```
 
-────────────────────────────────────────
-SYSTEMCHARAKTER
-────────────────────────────────────────
+Cover
+↓
+Sectional Pages
+↓
+Fixed Footer Layer
+↓
+Deterministic Counter
 
-Bundesdossier.  
-Technisches Validierungsdokument.  
-Strukturelle Infrastruktur.  
+```
 
-Nicht: Pitchdeck.  
-Nicht: SaaS.  
-Nicht: AI-Marketing.  
+No implicit behavior.
+No layout entropy.
 
-END.
+The PDF is a structural artifact,
+not a styled webpage export.
+
+---
+
+# 🔢 Pagination Philosophy
+
+v1.2 defines canonical indexing.
+
+Cover = Page 1  
+No counter resets  
+No branch-level hacks  
+No overflow drift  
+
+All branches follow identical counter logic.
+
+If a page miscounts,
+it is treated as a structural fault,
+not a cosmetic bug.
+
+---
+
+# 🔐 Canonical State Tags
+
+Tags represent frozen architectural states.
+
+```
+
+statement-v1.2-canonical
+execution-plan-v1.2-canonical
+stage1-v1.2-canonical
+strategy-v1.2-canonical
+
+```
+
+Tags mean:
+
+- Pagination stabilized
+- Typography aligned
+- Footer unified
+- No drift pages
+- Deterministic rebuild validated
+
+---
+
+# 🧠 Design Doctrine
+
+We do not design for visual flair.
+
+We design for:
+
+- structural coherence
+- deterministic reproduction
+- auditability
+- institutional readability
+- zero render entropy
+
+This repo is infrastructure.
+
+---
+
+# 🧰 Build Discipline
+
+Every branch builds independently.
+
+Never build Strategy from Statement.
+Never merge document internals across branches.
+Never share footer strings dynamically.
+
+Isolation is stability.
+
+---
+
+# 🚀 Release State
+
+SPRIND Submission Stack  
+Canonicalized v1.2  
+April 2026  
+
+Stable.
+Deterministic.
+Auditable.
+
+---
+
+# ☕ If You’re Reading This
+
+Don’t tweak margins randomly.
+Don’t re-enable Chrome headers.
+Don’t “just try auto height”.
+
+If something breaks,
+fix the structure.
+Not the symptom.
+
+Sweet as.
+```
+
+---
+
+# 🧩 Optional: ASCII Architecture Graph
+
+Wenn du willst, können wir oben noch ein Diagramm reinbauen wie:
+
+```
+              ┌────────────────────┐
+              │  Structural Spine  │
+              └─────────┬──────────┘
+                        │
+        ┌───────────────┼────────────────┐
+        │               │                │
+  Statement        Execution Plan   Strategy Dossier
+        │               │                │
+   Canonical v1.2   Canonical v1.2   Canonical v1.2
+```
+
+---
+
