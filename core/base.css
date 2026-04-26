@@ -31,3 +31,20 @@ body {
   font-size: 8pt;
   font-family: Courier, monospace;
 }
+
+/* FOOTER LEFT */
+
+.page::before {
+  content: "ConDyn — Stage 1 Execution Plan — v1.2";
+  position: absolute;
+  bottom: 15mm;
+  left: 20mm;
+  font-size: 8pt;
+  font-family: Courier, monospace;
+  opacity: 0.8;
+}
+
+.cover::before {
+  content: "";
+}
+
