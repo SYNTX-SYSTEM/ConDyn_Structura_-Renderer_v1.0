@@ -12,8 +12,8 @@ h2 {
 }
 
 p {
-  font-size: 10pt;
-  line-height: 1.4;
+  font-size: 11pt;
+  line-height: 1.45;
 }
 
 /* STATEMENT */
@@ -24,8 +24,8 @@ p {
 }
 
 .statement p {
-  font-size: 10pt;
-  line-height: 1.38;
+  font-size: 11pt;
+  line-height: 1.45;
   margin-bottom: 9pt;
 }
 
@@ -41,7 +41,7 @@ p {
 .footnote {
   margin-top: 45pt;
   font-size: 8pt;
-  line-height: 1.4;
+  line-height: 1.45;
   font-family: Courier, monospace;
 }
 
