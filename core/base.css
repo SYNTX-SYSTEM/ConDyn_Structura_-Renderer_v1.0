@@ -39,7 +39,7 @@ body {
 /* ============================= */
 
 .page::before {
-  content: "ConDyn — Stage 1 Execution Architecture — v1.1-stage1";
+  content: "ConDyn — Stage 1 Execution Architecture — v1.2";
   position: absolute;
   bottom: 15mm;
   left: 20mm;
@@ -77,30 +77,4 @@ body {
   padding-bottom: 6pt;
 }
 
-
-/* =============================== */
-/* PAGE NUMBER (BOTTOM RIGHT)     */
-/* =============================== */
-
-body {
-  counter-reset: page;
-}
-
-.page {
-  counter-increment: page;
-}
-
-.page::after {
-  content: counter(page);
-  position: absolute;
-  bottom: 15mm;
-  right: 20mm;
-  font-size: 8pt;
-  font-family: Courier, monospace;
-  opacity: 0.8;
-}
-
-.cover::after {
-  content: "";
-}
 

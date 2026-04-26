@@ -54,3 +54,28 @@
   margin: 20pt 0 25pt 0;
 }
 
+
+.gate {
+  display: flex;
+  margin-top: 24pt;
+  padding-top: 16pt;
+  border-top: 0.5pt solid rgba(10,58,122,0.3);
+}
+
+.gate-id {
+  width: 40pt;
+  font-family: Courier, monospace;
+  font-weight: bold;
+  font-size: 11pt;
+  color: #0A3A7A;
+}
+
+.gate-body {
+  flex: 1;
+}
+
+.gate-body h3 {
+  margin-top: 0;
+  margin-bottom: 6pt;
+}
+

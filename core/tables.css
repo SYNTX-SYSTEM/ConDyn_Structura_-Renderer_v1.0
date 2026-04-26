@@ -1,31 +1,33 @@
 table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 10pt;
-  margin-top: 10pt;
+  margin-top: 18pt;
+  font-size: 11pt;
 }
 
 th {
-  background: #0A3A7A;
-  color: #ffffff;
   text-align: left;
-  padding: 6pt;
+  font-weight: 600;
+  padding-bottom: 8pt;
+  border-bottom: 1pt solid #0A3A7A;
 }
 
 td {
-  border: 0.5pt solid #0A3A7A;
-  padding: 6pt;
+  padding: 10pt 6pt;
+  border-bottom: 0.5pt solid rgba(10,58,122,0.25);
+  vertical-align: top;
+}
+
+td:first-child {
+  width: 35%;
+  font-weight: 500;
+}
+
+td:last-child {
+  width: 65%;
 }
 
 td.num {
   text-align: right;
   font-family: Courier, monospace;
 }
-
-th {
-  text-align: left;
-  padding-bottom: 6pt;
-  border-bottom: 1pt solid #0A3A7A;
-  font-weight: normal;
-}
-
