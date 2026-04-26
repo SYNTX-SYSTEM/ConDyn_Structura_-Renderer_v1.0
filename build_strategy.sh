@@ -56,7 +56,6 @@ chromium \
   --disable-dev-shm-usage \
   --allow-file-access-from-files \
   --print-to-pdf=$OUTPUT_PDF \
-  --print-to-pdf-no-header \
   $OUTPUT_HTML
 
 echo "Done."

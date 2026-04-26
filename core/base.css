@@ -8,7 +8,6 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   background: #ffffff;
   color: #0A3A7A;
-  counter-reset: page;
 }
 
 .page {
@@ -16,22 +15,13 @@ body {
   height: 297mm;
   padding: 20mm;
   box-sizing: border-box;
-  box-sizing: border-box;
   position: relative;
   page-break-after: always;
-  counter-increment: page;
+  overflow: hidden;
 }
 
 /* PAGE NUMBER */
 
-.page::after {
-  content: counter(page);
-  position: absolute;
-  bottom: 10mm;
-  right: 20mm;
-  font-size: 8pt;
-  font-family: Courier, monospace;
-}
 
 .page h1 {
   border-bottom: 1pt solid #0A3A7A;
@@ -44,9 +34,9 @@ body {
 /* =============================== */
 
 .page::before {
-  content: "ConDyn — Structural Strategy Dossier — v1.0";
+  content: "ConDyn — Structural Strategy Dossier — v1.2";
   position: absolute;
-  bottom: 10mm;
+  bottom: 15mm;
   left: 20mm;
   font-size: 8pt;
   font-family: Courier, monospace;
@@ -57,4 +47,29 @@ body {
 .cover::before {
   content: "";
 }
+
+
+
+/* PAGE COUNTER */
+
+body {
+  counter-reset: page;
+}
+
+.page {
+  counter-increment: page;
+}
+
+.page::after {
+  content: counter(page);
+  position: absolute;
+  bottom: 15mm;
+  right: 20mm;
+  font-size: 8pt;
+  font-family: Courier, monospace;
+  opacity: 0.8;
+}
+
+
+
 

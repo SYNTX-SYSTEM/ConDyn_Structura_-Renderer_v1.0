@@ -29,3 +29,16 @@ th {
   font-weight: normal;
 }
 
+
+/* Pagination Control */
+
+table {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+tr {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
