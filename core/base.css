@@ -34,7 +34,7 @@ body {
 /* =============================== */
 
 .page::before {
-  content: "ConDyn — Structural Strategy Dossier — v1.2";
+  content: "ConDyn — Structural Strategy Dossier — v1.3";
   position: absolute;
   bottom: 15mm;
   left: 20mm;
