@@ -37,7 +37,8 @@ strategy/deployment-contexts.html \
 strategy/validation-metrics.html \
 strategy/risk-assessment.html \
 strategy/execution-roadmap.html \
-strategy/strategic-positioning.html
+strategy/strategic-positioning.html \
+strategy/team-capability.html 
 do
     sed -n '/<body>/,/<\/body>/p' $file | sed '1d;$d' >> $OUTPUT_HTML
 done
