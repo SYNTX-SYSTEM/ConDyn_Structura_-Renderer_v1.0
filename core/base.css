@@ -35,7 +35,7 @@ body {
 /* FOOTER LEFT */
 
 .page::before {
-  content: "ConDyn — Paradigm Statement — v1.3";
+  content: "ConDyn — Paradigm Statement — v1.4";
   position: absolute;
   bottom: 15mm;
   left: 20mm;
