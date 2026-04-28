@@ -1,5 +1,6 @@
 # Generated PDFs
 *.pdf
+strategy_full.html
 
 # OS
 .DS_Store
