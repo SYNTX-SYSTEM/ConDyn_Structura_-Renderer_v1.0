@@ -2,9 +2,9 @@
 
 set -e
 
-OUTPUT="statement_refined_v1.4_build.pdf"
+OUTPUT="statement_refined_v1.5_build.pdf"
 
-echo "Rendering Statement v1.4..."
+echo "Rendering Statement v1.5..."
 
 chromium \
   --headless=new \
